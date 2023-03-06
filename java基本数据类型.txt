@@ -1,0 +1,83 @@
+Java中有八种基本数据类型分别是:  byte short char int long float double
+还有一种是boolean类型 布尔类型
+byte是一个字节占八个比特位   取值范围是 -128~127
+short是二个字节占16个比特位  取值范围是 -2∧15~2∧15-1
+char是二个字节占16比特位
+int 是4个字节
+long 是8个字节
+float 是4个字节
+double 是8个字节
+
+转义字符:\b 退格   \t 水平制表符  
+
+类型转换运算:
+byte      short   char   int long  float  double 低换高
+当把级别低的变量的值赋给级别高的变量时,系统自动完成数据类型转换
+
+当把级别高的变量的值赋给级别低的变量时,必须使用类型转换运算
+
+输入基本数据
+Scanner是JDK1.5新增的一个类,可以使用该类创建一个对象
+
+
+Scanner reader = new Scanner(System.in);
+
+2.5   数组
+     数组元素类型  数组名[];
+    数组的元素类型[] 数组名;
+二维数组
+
+   数组的元素类型 数组名[][];
+数组的元素类型[][]数组名;
+
+为数组分配元素
+数组名 = new  数组元素的类型 [数组元素的个数];
+ boy = new float[4];
+
+编程题 Java 类型转换
+将double 类型转换为int 类型     
+输入: 12.34
+输出: 12
+代码如下
+
+public class Main {
+ public static void main(String[] args) {
+   Scanner scanner = new Scanner(System.in);
+    double d = scanner.nextDouble();
+   System.out.println(Main.typeConversion(d));
+  }
+  public static int typeConversion(double d) {
+ Double e = new Double(d);
+ int i = e.intValue();
+  return i;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+数组的声明和定义
